@@ -15,19 +15,20 @@
                     pass: ''
                 }
             }
-        }, methods : {
-            login(){
-                console.log(this.local.user,this.local.pass)
-                if(this.local.user === '1602E' && this.local.pass === '1602E'){
-                    window.localStorage.setItem('login','true')
+        },
+        methods: {
+            login() {
+                if (this.local.user === '1602E' && this.local.pass === '1602E') {
+                    console.log(11111)
+                    window.localStorage.setItem('login', 'true')
                     window.history.back()
                 }
             }
-         },
+        },
     }
 </script>
 <style>
-     * {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -43,10 +44,12 @@
     html {
         font-size: 625%;
     }
+
     a {
         color: #000;
         text-decoration: none;
     }
+
     .login_from {
         display: flex;
         flex-direction: column;

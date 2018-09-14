@@ -92,15 +92,15 @@
                 })
             }
         },
-        // beforeRouteEnter(to,from,next){
-        //     next()
-        // },
-        // beforeRouteLeave(to,from,next){
-        //     next()
-        // },
-        // beforeDestory(){
+        beforeRouteEnter(to,from,next){
+            next()
+        },
+        beforeRouteLeave(to,from,next){
+            next()
+        },
+        beforeDestory(){
             
-        // }
+        }
     }
 </script>
 <style>

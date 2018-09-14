@@ -42,13 +42,13 @@ let router = new Router({
     }
   ]
 })
-// router.beforeEach((to,from,next)=>{
-//   let login = window.localStorage.getItem('login')
-//   if(!login&&to.path !='/login'){
-//     console.log(111)
-//     next('/login')
-//   }
-//   next()
-// })
+router.beforeEach((to,from,next)=>{
+  let login = window.localStorage.getItem('login')
+  if(!login&&to.path !='/login'){
+    console.log(111)
+    next('/login')
+  }
+  next()
+})
 
 export default router
